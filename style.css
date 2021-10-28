@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.main
+{
+    width: 50%;
+    background:linear-gradient(to top,rgba(0,0,0, 0.5)50%,rgba(0,0,0, 0.5)50%),url(images/alappy.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    padding: 25%;
+}
+.navbar{
+    width: 100px;
+    height: 60px;
+    margin: auto;
+}
+.icon
+{
+    top: 2%;
+    position: absolute;
+    margin-left: 0%;
+}
+.logo
+{
+    color: turquoise;
+}
+ul{ top: 10px;
+    float: right;
+    display: flex;
+    
+}
+ul li{
+
+    font-size: 6px;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    top: 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+color: tomato;
+}
+.search
+{
+    float: left;
+    margin-left: 200px;
+    width: 100px;
+}
+.srh{
+font-family: 'Times New Roman', Times, serif;
+width: 70px;
+background: transparent;
+}
+/*slider*/
+.slider
+{
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    margin-left: 25%;
+}
+.images
+{
+ display: flex;
+ width: 100%;
+}
+.images img
+{ 
+    height: 100px;
+    width: 200%;
+    transition: all 0.15s ease;
+
+}
+.images input
+{
+    display: none;
+}
+.dot
+{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dot label
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid black 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.dot label:hover{background: black;}
+#img1:checked ~ .c1{
+    margin-left: 0;
+    width: 200px;
+}
+#img2:checked ~ .c2{
+    margin-left: -100%;
+    width: 200px;
+}
+#img3:checked ~ .c3{
+    margin-left: -200%;
+    width: 200px;
+}
+#img4:checked ~ .c4{
+    margin-left: -300%;
+    width: 200px;
+}
