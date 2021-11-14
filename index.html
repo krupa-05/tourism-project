@@ -9,37 +9,67 @@
 </head>
 <body>
     <div class="main">
-        
             <div class="icon">
               <h2 class="logo">Kerala Tourism</h2>
             </div>
-        
-   
-         <div class="menu">
-         <ul>
-           <li><a href="#">HOME</a></li>
-           <li><a href="#">LOGIN</a></li>
-           <li><a href="#">SIGNUP</a></li>
-         </ul>
-         </div>
+    
+            <nav>
+              <ul id="menuitems">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button></li>
+              </ul>
+            </nav>
+      
          <div class="search">
             <input class="srh" type="search" name="" placeholder="type">
             <a href="#"><button class="btn">Search</button></a>
          </div>
+    
+         <div id="login-form" class="login-page">
+          <div class="form-box">
+            <div class="button-box">
+              <div id="btn"></div>
+              <button type="button" onclick='login()' class="toggle-btn">Login</button>
+              <button type="button" onclick='signup()' class="toggle-btn">Signup</button>></button>
+            </div>
+            <form id='login' class="input-group-login">
+              <input type="text" class="input-field" placeholder="email id" required>
+              <input type="password" class="input-field" placeholder="enter password" required>
+              <input type="checkbox" class="check-box"><span>Remember Password</span>
+              <button type="submit" class="submit">Login</button>
+            </form>
+            <form id='signup' class="input-group-login">
+              <input type="text" class="input-field" placeholder="First Name" required>
+              <input type="text" class="input-field" placeholder="Last Name" required>
+              <input type="email" class="input-field" placeholder="Email id" required>
+              <input type="password" class="input-field" placeholder="enter password" required>
+              <input type="password" class="input-field" placeholder="confirm password" required>
+              <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+              <button type="submit" class="submit">Register</button>
+            </form>
+            
+          </div>
+        </div>
+      
     
     </div>
 
     <div class="sec">
         <h1 class="hsec">Explore Kerala</h1>
         <br>
+
         <p class="para">One of the beautiful states in our country is Kerala. Kerala is situated in the south western region of India. A state filled with natural beauty, Kerala is also known as “God’s Own Country”. Kerala is an extraordinary state that has many attractive points inside it. The state’s traditional dances are Kathakali and Mohini Aatam. Indian elephant is considered the official animal of the state. People of Kerala speak Malayalam; and it is the official language of the state.
 
             Kerala is a tourist destination for people from all parts of the world. The most important destinations are the museum, sanctuary, temples, backwaters and beaches. Munnar, Kovalam, Kumarakom and Alappae are few places one should not miss visiting after going to Kerala.
             
             Kerala is known as the “Land of Coconut Trees”. You can see coconut trees everywhere in the state. This gives natural beauty to the state. Kerala is also famous for spices especially Black Pepper. Because of this reason, Kerala is also known as the “Spice Garden of India”. Onam is the traditional festival celebrated by all Keralaites every year. It is believed that the Great King Mahabali visits everyone’s home on this day. People put Pookolams in front of their houses on this day to welcome Mahabali.</p>
-    </div>
     <br>
+    </div>
+    
      <div class="slider">
+         <br>
          <h1 class="heading">Destinations</h1>
          <br>
          <div class="images">
@@ -59,10 +89,209 @@
             <label for="img3"></label>
             <label for="img4"></label>
          </div>
+         <br>
      </div>
-     <br>
-     <div>
+     
+     <div class="four">
+       <br>
          <h1 class="fourth">14 Districts</h1>
+         <div class="row">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Alappuzha</h5>
+                  <img src="images/allapuzha.jpg" class="card-img-top" alt="...">
+                  <p class="body">Alappuzha, also known by its former name Alleppey, is the administrative headquarters of Alappuzha district in the Indian state of Kerala.</p>
+                  <div class="images">
+                    <input type="radio" name="slide" id="img1" checked>
+                    <input type="radio" name="slide" id="img2">
+                    <input type="radio" name="slide" id="img3">
+                    <input type="radio" name="slide" id="img4">
+        
+                    <img src="images/alapy1 (1).jpg" class="c2" alt="img2">
+                    <img src="images/alapy1 (3).jpg" class="c3" alt="img3">
+                 </div>
+                 <div class="dot">
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                    <label for="img4"></label>
+                 </div>
+                </div>
+                
+              </div>
+            </div>
+            <br>
+              <div class="col">
+               <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Kasargod</h5>
+                  <img src="images/kasargod.jpg" class="card-img-top" alt="...">
+                  <p class="body">Kasargod is a small coastal town in Northern Pary of Kerala displaying a delightful blend of various religions, culture and bounty of nature. Blessed with majestic forts, lofty hills, beautiful offbeat backwaters, temples and pristine beaches, the town oozes charm and tranquillity from every aspect. It is gaining popularity among people from nearby cities owing to the presence of luxury resorts.</p>
+                </div>
+                
+               </div>
+              </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">kollam</h5>
+                  <img src="images/kollam.jpg" class="card-img-top" alt="...">
+                  <p class="body">A treasure trove of natural wonders and historical edifices, Kollam is an enchanting town with backwaters and picturesque landscapes. Located 70kms away from Thiruvananthapuram, Kerala, Kollam is a commercial centre and home to India’s cashew producing industry. Popularly known as Quilon, it is often regarded as the gateway to the backwaters of Kerala.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">kottayam</h5>
+                  <img src="images/kottayam.jpg" class="card-img-top" alt="...">
+                  <p class="body">An ancient town located on a hilltop bordered by the western ghats on the east and the thrilling Vembanad Lake on the west, Kottayam is a culturally rich and naturally enchanting destination. Apart from nature's bounty, the town has many laurels to its name. It is a proud town to achieve 100% literacy in India for the first time. Also being the land of several publishing houses and print media, Kottayam is also tagged as the 'Akshara Nagari' meaning 'City of letters'.
+
+                    The city is also a significant commercial hub for spices and crops especially rubber. One will see acres of a well-kept plantation of rubber all across the town. Other than its commercial importance, Kottayam is also dotted with a plethora of ancient and fascinating shrines all narrating a story of their own. With mesmerizing landscape and verdant fields are sure to lure you back to this place.
+                    
+                    </p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Kochi</h5>
+                  <img src="images/kasargod.jpg" class="card-img-top" alt="...">
+                  <p class="body">Kasargod is a small coastal town in Northern Pary of Kerala displaying a delightful blend of various religions, culture and bounty of nature. Blessed with majestic forts, lofty hills, beautiful offbeat backwaters, temples and pristine beaches, the town oozes charm and tranquillity from every aspect. It is gaining popularity among people from nearby cities owing to the presence of luxury resorts.</p>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">kannur</h5>
+                      <img src="images/kannur.jpg" class="card-img-top" alt="...">
+                      <p class="body">Located on the Malabar Coast of Kerala, Kannur (fondly known as Cannanore), is a beautiful city bundled with a plethora of sightseeing options like beaches, monuments, ancient temples and picnic spots.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">pathanamthitta</h5>
+                      <img src="images/pta.jpg" class="card-img-top" alt="...">
+                      <p class="body">Pathanamthitta, in southern Kerala, is a town immersed in spirituality and mysticism. Blessed with several ancient temples, it is renowned as headquarters of pilgrimage in Kerala as Sabarimala is situated in the Pathanamthitta district. It is a land of untouched beauty with pristine rivers, lofty mountain ranges and sprawling coconut groves.</p>
+                      <div class="images">
+                        <input type="radio" name="slide" id="img1" checked>
+                        <input type="radio" name="slide" id="img2">
+                        <input type="radio" name="slide" id="img3">
+                        <input type="radio" name="slide" id="img4">
+            
+                        <img src="images/pta (2).jpg" class="c1" alt="img1">
+                        <img src="images/pta.jpg" class="c2" alt="img2">
+                     </div>
+                     <div class="dot">
+                        <label for="img1"></label>
+                        <label for="img2"></label>
+                        <label for="img3"></label>
+                        <label for="img4"></label>
+                     </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Kozhikode</h5>
+                      <img src="images/" class="card-img-top" alt="...">
+                      <p class="body">Formerly known as Calicut, Kozhikode is located in Kerala. It was the Capital of Malabar during the Zamorin rule 500 years ago and is famous for its centuries-old trade in cotton and spices with Jews, Arabs, Phoenicians and Chinese. Basking in the idyllic setting of the serene Arabian Sea on the west and the proud peaks of the Wayanad hills on the east, this district with the serene beaches, lush green countryside, historic sites, all combine to make Kozhikode a popular tourist destination.
+
+                        Vasco da Gama had set his foot on the remote beach of Kappad in Kozhikode in 1498 and 'Discovered India' and established spice trade routes with the west. Kozhikode city is the marketing centre for commodities like pepper coconut, coffee, rubber, lemongrass oil etc., produced in Kozhikode and the neighbouring districts of Wayanad, Malappuram and Kannur.  Being the major trade centre in Malabar and major exporter to foreign countries, the international travellers christened this district as ‘the noble emporium of India’. 
+                        
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">palakkad</h5>
+                      <img src="images/palakkad.jpg" class="card-img-top" alt="...">
+                      <p class="body">The quaint town of Palakkad in central Kerala boasts of picturesque landscape, tranquil scenery and clear backwaters. Also known as Palghat, Pallakad is located near a wide low pass in the Western Ghats mountain ranges. Palakkad is the land of Palmyras and Paddy Fields and is famous as the chief granary of Kerala. </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Trivandrum</h5>
+                      <img src="images/tvm.jpg" class="card-img-top" alt="...">
+                      <p class="body">The capital city of Kerala, Thiruvananthapuram or Trivandrum, is an appealing blend of a strongly rooted heritage and a nostalgic colonial legacy. Built upon seven hills, this city has long since left the days when it was only used by seafaring explorers behind - today, Trivandrum is an expensive metropolis with quaint urban charm and plenty of architectural and historical places to visit. In addition, Trivandrum is a gateway to nearby popular beach towns of Kovalam and Varkala.
+
+                        The Padmanabhaswamy temple (also known as Anantha Padmanabhaswamy temple) is a must-visit temple of India. Other famous temples in Trivandrum include the Attukal Bhagawati temple, the Aazhimala Siva Temple, the Karikkakom Chamundi Devi Temple, and the Pazhavangadi Ganapathy Temple.
+                        
+                        The city is home to a few museums, such as the Kuthiramalika Palace Museum and the Napier Museum. The Kuthiramalika Palace Museum is situated close-by to the Padmanabhaswamy temple. Renowned for its Travancore styled architectural features and its structural elegance, this museum houses priceless paintings, traditional furniture, and other royal family collections.
+                        
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">idukki</h5>
+                      <img src="images/Thekkady1.jpg" class="card-img-top" alt="...">
+                      <p class="body">Idukki, a landlocked district of Kerala, is one of the most nature-rich areas in Kerala with more than half of the area covered with forest. This rugged hill resort is known for its wildlife sanctuaries, beautiful bungalows, tea factories, rubber plantations and forests.
+
+                        Idukki's speciality lies in 650 feet long and 550 feet high arch dam across the Kuravan Kurathi mountain, which is the largest in the country. Anamudi, which is the highest peak in India, south of the Himalayas, is also located in Idukki. Idukki is one of the districts in the state that has abundant scope for promotion of eco-tourism if proper infrastructure and promotional activities are provided.
+                        
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">wayanad</h5>
+                      <img src="images/wayanad.jpg" class="card-img-top" alt="...">
+                      <p class="body">Replete with waterfalls, historical caves, comfortable resorts and homestays, Wayanad in Kerala is famous for its spice plantations and wildlife. Walking through the sprawling spice plantations, trekking to the pre-historic caves and experiencing a resort holiday are one of the many things you can do to get a taste of Wayanad.
+
+                        Wayanad is best known for the wildlife reserves - Wayanad wildlife reserve which is home to an exquisite variety of flora and fauna. Wayanad wildlife reserve is an integral part of the Nilgiri biosphere reserve peacefully located amidst the serene hills of Western Ghats. Wayanad homes a wide variety of wildlife like elephants, leopards, and bears. Wayanad is a perfect weekend idea from the cities of South India. If taking a road trip from Bangalore, you will drive through three national parks: Nagarhole, Bandipur and Mudumalai.
+                      
+                        
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">ernakulam</h5>
+                      <img src="images/" class="card-img-top" alt="...">
+                      <p class="body">Ernakulam is the central district in Kerala and is home to its financial and industrial capital, Kochi. The district is considered as the economic and political hub of Kerala. </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">malappuram</h5>
+                      <img src="images/malapurram.jpg" class="card-img-top" alt="...">
+                      <p class="body">Malappuram district has a rich and vibrant history. The military headquarters of the Zamorins of Kozhikode since ancient times, this district was the site for many of the Mappila Revolts (uprising against the British East India Company in Kerala) between 1792 and 1921. Malappuram literally means a land atop hills and the region is enriched by three great rivers flowing through it - the Chaliyar, Kadalundi and the Bharathapuzha.  </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+
+          </div>
      </div>
 </body>
 </html>

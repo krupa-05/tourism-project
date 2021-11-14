@@ -23,10 +23,14 @@
 {
     color: turquoise;
  margin-left: auto;
+ padding-left: 0%;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-ul{ top: 10px;
+.menu{ top: 10px;
     float: right;
     display: flex;
+    padding-left: 50px;
+    padding-top: 10px;
     
 }
 ul li{
@@ -62,6 +66,8 @@ background: transparent;
 .sec
 {
     background-color: darkorchid;
+    height: 75%;
+    padding-top: 22px;
 }
 .hsec
 {
@@ -112,8 +118,8 @@ background: transparent;
 }
 .dot label
 {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     border-radius: 50px;
     border: solid black 3px;
     cursor: pointer;
@@ -147,8 +153,57 @@ background: transparent;
 
 .fourth
 {
-    color: blueviolet;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(117, 69, 161);
+    font-family: cursive;
+    font-weight: bold;
     font-size: 30px;
     text-align: center;
+    
+}
+.four
+{
+    background-color: cadetblue;
+}
+
+
+.col
+{
+    width: 82%;
+    box-sizing: 45%;
+}
+.card-img-top
+{
+    width: 80px;
+    height: 30px;
+}
+.body
+{    
+    font-size: 10px;
+    text-align: justify;
+}   
+    
+.card-img-top
+{
+    padding-left: 45%;
+}
+.card-title
+{
+    padding-left:50% ;
+    font-weight: bold;
+}
+.body
+{
+    padding-left:16% ;
+    left: 30px;
+    font-size: 9px;
+}
+.card-title
+{
+    text-decoration: aqua;
+    font-family: fantasy;
+}
+
+.images1
+{
+    margin-top: 2%;
 }
